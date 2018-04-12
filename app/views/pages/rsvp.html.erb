@@ -1,0 +1,55 @@
+<div class="background-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url( <%= image_url("ottiliyves.JPG") %>"">
+<div class="navbar-wagon hidden-xs hidden-sm">
+  <!-- Right Navigation -->
+    <%= link_to "Home", root_path %>
+    <%= link_to "La journée", la_journee_path %>
+    <%= link_to "Les hôtels", les_hotels_path %>
+    <%= link_to "RSVP", rsvp_path %>
+    <%= link_to "Liste de mariage", liste_mariage_path %>
+  </div>
+  <!-- Dropdown appearing on mobile only -->
+  <div class="navbar-wagon-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "La journée", la_journee_path %></li>
+        <li><%= link_to "Les hôtels", les_hotels_path %></li>
+        <li><%= link_to "RSVP", rsvp_path %></li>
+        <li><%= link_to "Liste de mariage", liste_mariage_path %></li>
+      </ul>
+    </div>
+  </div>
+<div class="container">
+  <div class="rsvp text-center">
+</div>
+<div class="form-wrapper text-center">
+  <div class="row">
+    <div class="col-xs-12 col-md-6 col-md-offset-3">
+      <h1 class="text-center">RSVP</h1>
+
+<%= simple_form_for @guest, url: rsvp_path, method: :post do |f| %>
+  <%= f.input :prenom, label: "Prénom", item_wrapper_class: 'row',required: true  %>
+  <%= f.input :nom ,required: true%>
+  <%= f.input :email ,required: true%>
+  <%= f.input :presence, as: :radio_buttons, label: "Je serai présent",
+              item_wrapper_class: 'radio-inline',required: true, collection: [[true, "Oui"], [false, "Non"]], label_method: :second, value_method: :first %>
+  <%= f.input :presence_brunch, as: :radio_buttons, label: "Je viendrai également au brunch du dimanche", item_wrapper_class: 'radio-inline',collection: [[true, "Oui"], [false, "Non"]], label_method: :second, value_method: :first%>
+  <%= f.input :nombre, collection: (1..10), label: "Nous serons :" %>
+  <%= f.input :remarques, label: "Avez vous des remarques à nous partager ?(régime alimentaire, besoin spécifique...)" %>
+  <%= f.button :submit, "Valider", class: "btn btn-primary" %>
+<% end %>
+    </div>
+
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
