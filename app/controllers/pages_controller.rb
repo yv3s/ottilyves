@@ -24,7 +24,8 @@ class PagesController < ApplicationController
       remarques: parameters[:remarques])
     if @guest.save
       flash[:notice] = "Réponse bien enregistrée, merci !"
-      redirect_to root_path
+      redirect_to rsvp_path
+      UserMailer.welcome(@guest.prenom, @guest.nom, @guest.email, @guest.presence, @guest.presence_brunch, @guest.nombre, @guest.remarques).deliver_now
     else
       flash[:alert] = "Oooops, il semblerait que tous les champs ne soient pas renseignés !"
       render :rsvp

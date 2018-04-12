@@ -1,0 +1,10 @@
+<p>Hello les plus beaux futurs mariés,</p>
+
+<p>Vous avez reçu une nouvelle réponse de <%= @prenom %> <%= @nom %> - <%= @email %></p>
+
+<p>Viendront-ils ? : <%= @presence %></p>
+<% if @presence == "Oui"  %>
+  <p>Viendront-ils au brunch ? <%= @brunch %></p>
+  <p>Ils seront : <%= @nombre %></p>
+  <p>Leurs remarques : <%= @remarques %></p>
+<% end %>
