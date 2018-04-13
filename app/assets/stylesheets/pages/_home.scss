@@ -7,6 +7,9 @@
   p {
     font-size: 22px;
   }
+  h1 {
+    font-size: 85px;
+  }
 }
 
 .background-image {
@@ -68,12 +71,18 @@
 }
 
 .guest_presence_brunch {
-    display: none;
+  display: none;
 
 }
 
 .guest_nombre {
-      display: none;
+  display: none;
+}
 
+.guest_nombre_enfants {
+  display: none;
+}
 
+.btn {
+  margin-bottom: 15px;
 }

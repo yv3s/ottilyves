@@ -21,11 +21,12 @@ class PagesController < ApplicationController
       presence: parameters[:presence],
       presence_brunch: parameters[:presence_brunch],
       nombre: parameters[:nombre],
+      nombre_enfants: parameters[:nombre_enfants],
       remarques: parameters[:remarques])
     if @guest.save
       flash[:notice] = "Réponse bien enregistrée, merci !"
       redirect_to rsvp_path
-      UserMailer.welcome(@guest.prenom, @guest.nom, @guest.email, @guest.presence, @guest.presence_brunch, @guest.nombre, @guest.remarques).deliver_now
+      UserMailer.welcome(@guest.prenom, @guest.nom, @guest.email, @guest.presence, @guest.presence_brunch, @guest.nombre, @guest.nombre_enfants, @guest.remarques).deliver_now
     else
       flash[:alert] = "Oooops, il semblerait que tous les champs ne soient pas renseignés !"
       render :rsvp

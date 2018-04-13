@@ -5,13 +5,14 @@ class UserMailer < ApplicationMailer
   #
   #   en.user_mailer.welcome.subject
   #
-  def welcome(prenom, nom, email, presence, presence_brunch, nombre, remarques)
+  def welcome(prenom, nom, email, presence, presence_brunch, nombre, enfants, remarques)
     @prenom = prenom
     @nom = nom
     @email = email
     @presence = presence?(presence)
     @brunch = presence?(presence_brunch)
     @nombre = nombre
+    @enfants = enfants
     @remarques = remarques
 
     mail(to: ["yves.trocheris@gmail.com", "ottiliefumery@live.fr"], subject: "#{@prenom} #{@nom} a RSVP")

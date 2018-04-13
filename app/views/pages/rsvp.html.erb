@@ -34,9 +34,10 @@
   <%= f.input :email ,required: true%>
   <%= f.input :presence, as: :radio_buttons, label: "Je serai présent",
               item_wrapper_class: 'radio-inline',required: true, collection: [[true, "Oui"], [false, "Non"]], label_method: :second, value_method: :first %>
-  <%= f.input :nombre, collection: (1..10), label: "Nous serons :" %>
+  <%= f.input :nombre, collection: (1..8), label: "Nombre d'adultes :", selected: 1 %>
+  <%= f.input :nombre_enfants, collection: (0..5), label: "Nombre d'enfants :", selected: 0 %>
   <%= f.input :presence_brunch, as: :radio_buttons, label: "Je viendrai également au brunch du dimanche", item_wrapper_class: 'radio-inline',collection: [[true, "Oui"], [false, "Non"]], label_method: :second, value_method: :first%>
-  <%= f.input :remarques, label: "Avez vous des remarques à nous partager (régime alimentaire, besoin spécifique...), ou tout simplement un mot doux à nous envoyer =) ?" %>
+  <%= f.input :remarques, label: "Avez vous des remarques à nous partager (régime alimentaire, besoin spécifique...), ou tout simplement un mot doux à nous partager :)" %>
   <%= f.button :submit, "Valider", class: "btn btn-primary disabled" %>
 <% end %>
     </div>
