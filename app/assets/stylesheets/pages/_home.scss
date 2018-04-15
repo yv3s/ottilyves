@@ -2,13 +2,18 @@
   min-height: calc(100vh - 70px);
   align-items: center;
   justify-content: center;
-  padding-top: 8vh;
+  padding-top: 4vh;
   color: white;
   p {
     font-size: 22px;
   }
   h1 {
     font-size: 85px;
+  }
+
+  h2 {
+    margin-top: 0;
+    font-size: 32px;
   }
 }
 
