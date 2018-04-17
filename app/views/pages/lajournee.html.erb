@@ -1,4 +1,4 @@
-<div class="background-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url( <%= image_url("willy2.jpg") %>"">
+<div class="background-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url( <%= image_url("willy2.jpg") %>">
 <div class="navbar-wagon hidden-xs hidden-sm">
   <!-- Right Navigation -->
     <%= link_to "Home", root_path %>
@@ -24,6 +24,22 @@
   <div class="journee text-center">
 <h1>La journée</h1>
   </div>
+  <div class="day-container">
+    <div class="text">
+
+   <h2>1ère étape : <b>l'Église</b></h2>
+   <p>Nous vous donnons RDV à partir de 15h30 à l'Église de Gouvieux</p>
+   <p>La Messe débutera à 16h</p>
+    </div>
+    <div class="image-map">
+
+   <%= image_tag 'eglise.jpg', class: 'picture-journee' %>
+   <div
+    id="map"
+    style="width: 100%;
+    height: 600px;"
+    data-markers="<%= @markers.to_json %>"></div>
+    </div>
 </div>
 </div>
 </div>

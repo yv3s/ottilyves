@@ -3,6 +3,12 @@ class PagesController < ApplicationController
   end
 
   def lajournee
+    @markers =
+      {
+        lat: 49.1895336,
+        lng: 2.4162138,
+
+       }
   end
 
   def leshotels
