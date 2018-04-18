@@ -6,8 +6,9 @@
   color: white;
   position: relative;
   border-radius: 3px;
-  box-shadow: 3px 3px 3px #61393957;
   margin-bottom: 3vh;
+  display: flex;
+  flex-direction: column;
 }
 .card-user {
   position: absolute;
@@ -24,9 +25,12 @@
   text-transform: uppercase;
 }
 .card-description {
+  padding: 10px;
   position: absolute;
-  bottom: 10px;
+  bottom: -10px;
   left: 10px;
+  margin: auto;
+  height: 100%;
 }
 .card-description h2 {
   font-size: 24px;
