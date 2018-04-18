@@ -95,6 +95,7 @@
 .day-container {
   color: white;
   font-weight: 300;
+
 }
 
 .picture-journee {
@@ -105,4 +106,73 @@
 .image-map {
   display: flex;
   justify-content: space-between;
+}
+
+// .eglise {
+//   display: flex;
+//   justify-content: flex-start;
+//   width: 300px;
+//   flex-direction: row;
+//   margin-top: 24vh;
+// }
+
+.eglise-content {
+  justify-content: center;
+
+}
+
+.soiree {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+
+  // margin-top: 30vh;
+  // width: 300px;
+  // margin-left: 97vh;
+}
+
+.soiree-content {
+  width: 250px;
+  background-color: transparent;
+  opacity: 80%;
+}
+
+.space {
+  min-height: 2vh;
+}
+
+.oneline-container {
+  color: white;
+  // margin-top: 25vh;
+  min-height: 80vh;
+  vertical-align: center;
+  display: flex;
+  justify-content: space-between;
+    a {
+    text-decoration: none;
+    color: #F25757;
+    &:hover {
+      color: #61E8E1;
+    }
+  }
+}
+
+.cocktail {
+  // padding-left: 260px;
+  // padding-right: 31px;
+  width: 300px;
+
+}
+
+.eglise {
+  width: 300px;
+  // padding-left: 40px;
+  // padding-right: 160px;
+}
+
+.text-journee {
+}
+
+.row {
+  margin: auto;
 }

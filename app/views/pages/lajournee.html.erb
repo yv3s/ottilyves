@@ -1,6 +1,6 @@
-<div class="background-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url( <%= image_url("willy2.jpg") %>">
-<div class="navbar-wagon hidden-xs hidden-sm">
-  <!-- Right Navigation -->
+<div class="background-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url( <%= image_url("willy2.jpg") %>); opacity: 1,5; ">
+  <div class="navbar-wagon hidden-xs hidden-sm">
+    <!-- Right Navigation -->
     <%= link_to "Home", root_path %>
     <%= link_to "La journée", la_journee_path %>
     <%= link_to "Les hôtels", les_hotels_path %>
@@ -20,28 +20,52 @@
       </ul>
     </div>
   </div>
-<div class="container">
-  <div class="journee text-center">
-<h1>La journée</h1>
-  </div>
-  <div class="day-container">
-    <div class="text">
-
-   <h2>1ère étape : <b>l'Église</b></h2>
-   <p>Nous vous donnons RDV à partir de 15h30 à l'Église de Gouvieux</p>
-   <p>La Messe débutera à 16h</p>
+  <div class="container-fluid">
+    <div class="journee text-center">
+      <h1>La journée</h1>
     </div>
-    <div class="image-map">
 
-   <%= image_tag 'eglise.jpg', class: 'picture-journee' %>
-   <div
-    id="map"
-    style="width: 100%;
-    height: 600px;"
-    data-markers="<%= @markers.to_json %>"></div>
+    <div class="oneline-container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <div class="text-journee eglise">
+
+            <h2>#1 <b>Église</b> 💒</h2>
+            <p>Nous vous donnons RDV à partir de 14h45 à <a href="https://goo.gl/maps/XachxyrGM4T2" target="_blank">l'Église de Gouvieux</a> <br> Ne soyez pas en retard la mariée devrait rentrer dans l'Église à 15h.</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="text-journee text-right cocktail">
+
+            <h2>#2 <b>Cocktail</b> 🥂</h2>
+            <p>Dès 17h, au <a href="https://goo.gl/maps/C188xKmJVFm" target="_blank">Château des Saules</a>, pour fêter notre union autour d'une coupe de champagne et de petits fours ! </p>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-</div>
+
+
+
+
+<!--     <div class="day-container">
+      <div class="eglise">
+        <div class="eglise-content">
+         <h2>#1 <b>Église</b> 💒</h2>
+         <p>Nous vous donnons RDV à partir de 14h45 à <a href="https://goo.gl/maps/XachxyrGM4T2" target="_blank">l'Église de Gouvieux</a> <br> Ne soyez pas en retard la mariée devrait rentrer dans l'Église à 15h tapante.</p>
+
+       </div>
+     </div>
+     <div class="space">
+
+     </div>
+     <div class="soiree text-right">
+      <div class="soiree-content">
+       <h2>#2 <b>Cocktail</b> 🥂</h2>
+       <p>Dès 17h, au <a href="https://goo.gl/maps/C188xKmJVFm" target="_blank">Château des Saules</a>, pour fêter notre union autour d'une coupe de champagne et de petits fours ! </p>
+
+     </div>
+   </div>
+ </div> -->
 </div>
 
 
