@@ -205,4 +205,11 @@
 
   list-style-type: none;
   }
+   a {
+    text-decoration: none;
+    color: #F25757;
+    &:hover {
+      color: #61E8E1;
+    }
+  }
 }
