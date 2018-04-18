@@ -1,6 +1,6 @@
 <div class="background-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url( <%= image_url("willy5.jpg") %>"">
-<div class="navbar-wagon hidden-xs hidden-sm">
-  <!-- Right Navigation -->
+  <div class="navbar-wagon hidden-xs hidden-sm">
+    <!-- Right Navigation -->
     <%= link_to "Home", root_path %>
     <%= link_to "La journée", la_journee_path %>
     <%= link_to "Les hôtels", les_hotels_path %>
@@ -20,11 +20,52 @@
       </ul>
     </div>
   </div>
-<div class="container">
-  <div class="hotels text-center">
-<h1>Hotels</h1>
+  <div class="container">
+    <div class="hotels text-center">
+      <h1>Hôtels</h1>
+    </div>
+    <div class="hotels-navette-content text-center">
+      <p>Entre <a href="https://www.booking.com/searchresults.fr.html?aid=397596&label=gog235jc-index-fr-XX-XX-unspec-fr-com-L%3Afr-O%3AosSx-B%3Achrome-N%3AXX-S%3Abo-U%3Ac-H%3As&lang=fr&sid=afcacf4da9143ebf9ec5923673ab02a2&sb=1&src=index&src_elem=ssb&error_url=https%3A%2F%2Fwww.booking.com%2Findex.fr.html%3Faid%3D397596%3Blabel%3Dgog235jc-index-fr-XX-XX-unspec-fr-com-L%253Afr-O%253AosSx-B%253Achrome-N%253AXX-S%253Abo-U%253Ac-H%253As%3Bsid%3Dafcacf4da9143ebf9ec5923673ab02a2%3Bsb_price_type%3Dtotal%26%3B&ac_presel=0&ss=Ansacq&ssne=Ansacq&ssne_untouched=Ansacq&dest_id=-1407809&dest_type=city&checkin_monthday=8&checkin_month=9&checkin_year=2018&checkout_monthday=9&checkout_month=9&checkout_year=2018&no_rooms=1&group_adults=2&group_children=0&room1=A%2CA&from_sf=1" target="_blank">Bookings.com</a> et <a href="https://www.airbnb.fr/s/Ansacq/homes?refinement_paths%5B%5D=%2Fhomes&place_id=ChIJCV1PBiiz50cRAE9kgT7xCgQ&query=Ansacq&checkin=2018-09-08&checkout=2018-09-09&adults=2" target="_blank" >Airbnb</a>, tout le monde devrait trouver un toit pour la nuit </p>
+      <p>Nous mettrons en place un service de navette pour rentrer du Château des Saules après la soirée. Seuls les 4 hôtels ci-dessous seront désservis :  </p>
+      <div class="row">
+        <div class="col-xs-6 col-sm-3">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('');">
+            <div class="card-description">
+              <h2>Ibis</h2>
+              <p>20 min d'Ansacq - 20 min de Gouvieux</p>
+            </div>
+            <a class="card-link" href="https://www.booking.com/hotel/fr/ibis-creil-sur-oise.fr.html?label=gen173nr-1DCAEoggJCAlhYSDNYBGhNiAEBmAENuAEHyAEM2AED6AEBkgIBeagCAw;sid=afcacf4da9143ebf9ec5923673ab02a2;all_sr_blocks=22093606_94352180_0_2_0;bshb=2;checkin=2018-09-08;checkout=2018-09-09;dest_id=-1477144;dest_type=city;dist=0;group_adults=2;hapos=1;highlighted_blocks=22093606_94352180_0_2_0;hpos=1;room1=A%2CA;sb_price_type=total;srepoch=1524070131;srfid=1526657fc4011e0658b1cc026542fb49cba7851fX1;srpvid=abdd763859190342;type=total;ucfs=1&#hotelTmpl" target="_blank" ></a>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-3">
+         <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('');">
+          <div class="card-description">
+            <h2>Campanile</h2>
+            <p>20 min d'Ansacq - 20 min de Gouvieux</p>
+          </div>
+          <a class="card-link" href="https://www.booking.com/hotel/fr/campanile-creil-villers-saint-paul.fr.html?label=gen173nr-1DCAEoggJCAlhYSDNYBGhNiAEBmAENuAEHyAEM2AED6AEBkgIBeagCAw;sid=afcacf4da9143ebf9ec5923673ab02a2;all_sr_blocks=21944906_103197926_0_2_0;bshb=2;checkin=2018-09-08;checkout=2018-09-09;dest_id=-1477144;dest_type=city;dist=0;group_adults=2;hapos=1;highlighted_blocks=21944906_103197926_0_2_0;hpos=1;room1=A%2CA;sb_price_type=total;srepoch=1524070347;srfid=481086577a0ad0641eeb4c79d0ac58366f710571X1;srpvid=fed676a5be6a0095;type=total;ucfs=1&#hotelTmpl" target="_blank" ></a>
+        </div>          </div>
+        <div class="col-xs-6 col-sm-3">
+         <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('');">
+          <div class="card-description">
+            <h2>La Ferme de Vaux</h2>
+            <p>20 min d'Ansacq - 15 min de Gouvieux</p>
+          </div>
+          <a class="card-link" href="https://www.booking.com/hotel/fr/la-ferme-de-vaux.fr.html?label=gen173nr-1DCAEoggJCAlhYSDNYBGhNiAEBmAENuAEHyAEM2AED6AEBkgIBeagCAw;sid=afcacf4da9143ebf9ec5923673ab02a2;all_sr_blocks=35475902_116117695_0_2_0;bshb=2;checkin=2018-09-08;checkout=2018-09-09;dest_id=-1422739;dest_type=city;dist=0;group_adults=2;hapos=1;highlighted_blocks=35475902_116117695_0_2_0;hpos=1;room1=A%2CA;sb_price_type=total;srepoch=1524070465;srfid=175ef06f9fcc66834e9dccb9fd10fc1fa85599dbX1;srpvid=4eac76df26730137;type=total;ucfs=1&#hotelTmpl" target="_blank" ></a>
+        </div>
+      </div>
+        <div class="col-xs-6 col-sm-3">
+         <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('');">
+          <div class="card-description">
+            <h2>Hostellerie du Parc</h2>
+            <p>15 min d'Ansacq - 30 min de Gouvieux</p>
+          </div>
+          <a class="card-link" href="https://www.booking.com/hotel/fr/hostellerie-du-parc-liancourt1.fr.html?label=gen173nr-1DCAEoggJCAlhYSDNYBGhNiAEBmAENuAEHyAEM2AED6AEBkgIBeagCAw;sid=afcacf4da9143ebf9ec5923673ab02a2;checkin=2018-09-08;checkout=2018-09-09;ucfs=1;srpvid=5dee7725ba2205d0;srepoch=1524070605;highlighted_blocks=206099701_115299458_2_0_0;all_sr_blocks=206099701_115299458_2_0_0;bshb=2;room1=A%2CA;hpos=1;hapos=1;dest_type=city;dest_id=-1446870;srfid=df7acf0f8ad8e290d8d5a9566042a83e4d70d5f3X1;from=searchresults;highlight_room=#hotelTmpl" target="_blank" ></a>
+        </div>
+      </div>
+      </div>
+    </div>
   </div>
-</div>
 </div>
 </div>
 
