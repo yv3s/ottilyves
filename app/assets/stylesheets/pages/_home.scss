@@ -115,13 +115,6 @@
   justify-content: space-between;
 }
 
-// .eglise {
-//   display: flex;
-//   justify-content: flex-start;
-//   width: 300px;
-//   flex-direction: row;
-//   margin-top: 24vh;
-// }
 
 .eglise-content {
   justify-content: center;
@@ -132,10 +125,6 @@
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
-
-  // margin-top: 30vh;
-  // width: 300px;
-  // margin-left: 97vh;
 }
 
 .soiree-content {
@@ -181,6 +170,7 @@
 
 .text-journee {
   width: 350px;
+  color: white;
   // height: 180px;
   background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2));
   padding: 20px;
@@ -212,4 +202,9 @@
       color: white;
     }
   }
+}
+
+.text-liste {
+  color:white;
+  font-weight: 300 ;
 }
