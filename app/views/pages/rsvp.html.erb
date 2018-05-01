@@ -1,9 +1,9 @@
 <div class="background-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url( <%= image_url("willy4.jpg") %>"">
-<div class="navbar-wagon hidden-xs hidden-sm">
-  <!-- Right Navigation -->
+  <div class="navbar-wagon hidden-xs hidden-sm">
+    <!-- Right Navigation -->
     <%= link_to "Home", root_path %>
     <%= link_to "La journée", la_journee_path %>
-    <%= link_to "Les hôtels", les_hotels_path %>
+    <%= link_to "Hôtels", les_hotels_path %>
     <%= link_to "RSVP", rsvp_path %>
     <%= link_to "Liste de mariage", liste_mariage_path %>
   </div>
@@ -20,31 +20,31 @@
       </ul>
     </div>
   </div>
-<div class="container">
-  <div class="rsvp text-center">
-</div>
-<div class="form-wrapper text-center">
-  <div class="row">
-    <div class="col-xs-12 col-md-6 col-md-offset-3">
-      <h1 class="text-center">RSVP</h1>
-
-<%= simple_form_for @guest, url: rsvp_path, method: :post do |f| %>
-  <%= f.input :prenom, label: "Prénom", item_wrapper_class: 'row',required: true  %>
-  <%= f.input :nom ,required: true%>
-  <%= f.input :email ,required: true%>
-  <%= f.input :presence, as: :radio_buttons, label: "Je serai présent",
-              item_wrapper_class: 'radio-inline',required: true, collection: [[true, "Oui"], [false, "Non"]], label_method: :second, value_method: :first %>
-  <%= f.input :nombre, collection: (1..8), label: "Nombre d'adultes :", selected: 1 %>
-  <%= f.input :nombre_enfants, collection: (0..5), label: "Nombre d'enfants :", selected: 0 %>
-  <%= f.input :presence_brunch, as: :radio_buttons, label: "Je viendrai également au brunch du dimanche", item_wrapper_class: 'radio-inline',collection: [[true, "Oui"], [false, "Non"]], label_method: :second, value_method: :first%>
-  <%= f.input :remarques, label: "Avez vous des remarques à nous partager (régime alimentaire, besoin spécifique...), ou tout simplement un mot doux à nous partager :)" %>
-  <%= f.button :submit, "Valider", class: "btn btn-primary disabled" %>
-<% end %>
+  <div class="container">
+    <div class="rsvp text-center">
     </div>
+    <div class="form-wrapper text-center">
+      <div class="row">
+        <div class="col-xs-12 col-md-6 col-md-offset-3">
+          <h1 class="text-center">RSVP</h1>
 
+          <%= simple_form_for @guest, url: rsvp_path, method: :post do |f| %>
+          <%= f.input :prenom, label: "Prénom", item_wrapper_class: 'row',required: true  %>
+          <%= f.input :nom ,required: true%>
+          <%= f.input :email ,required: true%>
+          <%= f.input :presence, as: :radio_buttons, label: "Je serai présent",
+          item_wrapper_class: 'radio-inline',required: true, collection: [[true, "Oui"], [false, "Non"]], label_method: :second, value_method: :first %>
+          <%= f.input :nombre, collection: (1..8), label: "Nombre d'adultes :", selected: 1 %>
+          <%= f.input :nombre_enfants, collection: (0..5), label: "Nombre d'enfants :", selected: 0 %>
+          <%= f.input :presence_brunch, as: :radio_buttons, label: "Je viendrai également au brunch du dimanche", item_wrapper_class: 'radio-inline',collection: [[true, "Oui"], [false, "Non"]], label_method: :second, value_method: :first%>
+          <%= f.input :remarques, label: "Souhaitez vous nous faire part d'une information particulière ? (régime alimentaire, besoin spécifique...), ou bien tout simplement un mot doux à nous partager ? :)" %>
+          <%= f.button :submit, "Valider", class: "btn btn-primary disabled" %>
+          <% end %>
+        </div>
+
+      </div>
+    </div>
   </div>
-</div>
-</div>
 </div>
 </div>
 
