@@ -7,7 +7,6 @@ class PagesController < ApplicationController
       {
         lat: 49.1895336,
         lng: 2.4162138,
-
        }
   end
 
@@ -41,4 +40,9 @@ class PagesController < ApplicationController
 
   def liste
   end
+
+  def  recap
+    @guests = Guest.all
+  end
+
 end

@@ -1,0 +1,9 @@
+<div class="container">
+  <ul>
+  <% @guests.each do |guest|   %>
+    <li><%= guest.nom %> | <%= guest.prenom %> | <%= guest.presence %> | <%= guest.nombre %> </li>
+  <% end %>
+  </ul>
+</div>
+
+

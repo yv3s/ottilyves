@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get '/rsvp', to: 'pages#rsvp'
   post '/rsvp', to: 'pages#rsvpnew'
   get '/liste-mariage', to: 'pages#liste'
+  get '/recap', to: 'pages#recap'
 end
