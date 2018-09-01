@@ -43,6 +43,7 @@ class PagesController < ApplicationController
 
   def  recap
     @guests = Guest.all
+    @brunch = Guest.where(presence_brunch: true)
   end
 
 end

@@ -4,6 +4,15 @@
     <li><%= guest.nom %> | <%= guest.prenom %> | <%= guest.presence %> | <%= guest.nombre %> </li>
   <% end %>
   </ul>
+
+  <h1>Brunch</h1>
+
+   <ul>
+  <% @brunch.each do |guest|   %>
+    <li><%= guest.nom %> - <%= guest.prenom %> - <%= guest.nombre %> </li>
+  <% end %>
+  </ul>
+
 </div>
 
 
