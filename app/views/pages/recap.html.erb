@@ -13,6 +13,14 @@
   <% end %>
   </ul>
 
+  <h1>Brunch KO</h1>
+
+  <ul>
+  <% @brunch_ko.each do |guest|   %>
+    <li><%= guest.nom %> - <%= guest.prenom %> - <%= guest.nombre %> </li>
+  <% end %>
+  </ul>
+
 </div>
 
 

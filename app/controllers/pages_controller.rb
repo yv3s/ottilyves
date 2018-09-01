@@ -44,6 +44,7 @@ class PagesController < ApplicationController
   def  recap
     @guests = Guest.all
     @brunch = Guest.where(presence_brunch: true)
+    @brunch_ko = Guest.where(presence_brunch: false)
   end
 
 end
